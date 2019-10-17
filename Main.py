@@ -1,6 +1,6 @@
 import json, requests
 
-__address__ = input("Write the correctx address:\n")
+__address__ = input("Write the correct address:\n")
 
 def CheckCorrectWallet(address):
     global __address__
@@ -40,4 +40,4 @@ def RateUSD_ZEC():  #rate ZEC-USD
 print('ZEC balance: ' + str(BalanceZec()))
 print('ZEC balance in USD: ' + str(RateUSD_ZEC()*BalanceZec()))
 print('ZEC balance in RUB: ' + str(RateRUB_ZEC()*BalanceZec()))
-input()
+input('\nEnter for exit...')
